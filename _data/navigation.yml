@@ -5,9 +5,12 @@ main:
 
   - title: "Notes"
     url: /notes/
-    
+
   - title: "CV"
     url: /cv/
-    
+
   - title: "Talks"
     url: /talks/
+
+  - title: "Podcasts"
+    url: /podcasts/
