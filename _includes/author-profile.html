@@ -106,6 +106,12 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
+      {% if author.spotify %}
+        <li><a href="{{ author.spotify }}"><i class="fab fa-spotify"></i> Spotify</a></li>
+      {% endif %}
+      {% if author.applepodcast %}
+        <li><a href="{{ author.applepodcast }}"><i class="fas fa-podcast"></i> spotify</a></li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
