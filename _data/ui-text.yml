@@ -26,7 +26,7 @@ en: &DEFAULT_EN
   powered_by                 : "Powered by"
   website_label              : "Website"
   email_label                : "Email"
-  recent_posts               : "Recent Posts"
+  recent_podcasts            : "Recent Podcasts"
   undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
   comment_form_info          : "Your email address will not be published. Required fields are marked"
   comment_form_comment_label : "Comment"
@@ -74,7 +74,7 @@ es: &DEFAULT_ES
   powered_by                 : "Powered by"
   website_label              : "Sitio web"
   email_label                : "Email"
-  recent_posts               : "Entradas recientes"
+  recent_podcasts            : "Entradas recientes"
   undefined_wpm              : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
   comment_form_info          :
   comment_form_comment_label :
@@ -118,7 +118,7 @@ fr: &DEFAULT_FR
   powered_by                 : "Propulsé par"
   website_label              : "Site"
   email_label                : "Email"
-  recent_posts               : "Posts récents"
+  recent_podcas              : "Posts récents"
   undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
   comment_form_info          :
   comment_form_comment_label :
@@ -164,7 +164,7 @@ tr: &DEFAULT_TR
   powered_by                 : "Emeği geçenler: "
   website_label              : "Web sayfası"
   email_label                : "E-posta"
-  recent_posts               : "Son yazılar"
+  recent_podcasts            : "Son yazılar"
   undefined_wpm              : "_config.yml dosyasında tanımlanmamış words_per_minute parametresi"
   comment_form_info          :
   comment_form_comment_label :
@@ -206,7 +206,7 @@ pt: &DEFAULT_PT
   powered_by                 : "Feito por"
   website_label              : "Site"
   email_label                : "E-mail"
-  recent_posts               : "Postagens recentes"
+  recent_podcasts            : "Postagens recentes"
   undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
   comment_form_info          : "Seu endereço de e-mail não será publicado. Campos obrigatórios são marcados"
   comment_form_comment_label : "Comentário"
@@ -250,7 +250,7 @@ it: &DEFAULT_IT
   powered_by                 : "Powered by"
   website_label              : "Website"
   email_label                : "Email"
-  recent_posts               : "Articoli Recenti"
+  recent_podcast             : "Articoli Recenti"
   undefined_wpm              : "Parametro words_per_minute non definito in _config.yml"
   comment_form_info          :
   comment_form_comment_label :

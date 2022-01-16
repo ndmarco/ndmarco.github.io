@@ -189,14 +189,18 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  podcasts:
+    output: true
+    permalink: /:collection/:path/
+
 
 
 # Defaults
 defaults:
-  # _posts
+  # _podcasts
   - scope:
       path: ""
-      type: posts
+      type: podcasts
     values:
       layout: single
       author_profile: true
