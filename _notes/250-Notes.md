@@ -1,7 +1,7 @@
 ---
 title: "250 Notes"
-collection: teaching
-permalink: /teaching/250-Notes
+collection: notes
+permalink: /notes/250-Notes
 date: 2020-01-01
 ---
 

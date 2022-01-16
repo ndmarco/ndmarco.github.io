@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Nicholas Marco"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Los Angeles, California"
+  bio              : "PhD student in Biostatistics"
+  location         : "UCLA"
   employer         :
   pubmed           :
   googlescholar    :
@@ -209,10 +209,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _notes
   - scope:
       path: ""
-      type: teaching
+      type: notes
     values:
       layout: single
       author_profile: true
