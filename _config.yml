@@ -86,7 +86,7 @@ author:
   location         : "UCLA"
   employer         :
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=Er_RTAgAAAAJ&hl=en&citsig=AMD79orzuEgRcj9WdCODzrxOeF-P_4Raaw"
   email            : "ndmarco96@g.ucla.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/ndmarco"
+  github           : "ndmarco"
   google_plus      :
   keybase          :
   instagram        :

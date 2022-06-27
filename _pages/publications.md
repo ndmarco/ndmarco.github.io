@@ -11,6 +11,17 @@ author_profile: true
 
 {% include base_path %}
 
+## Methodology
+
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.category == 'Methodology' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Applied
+{% for post in site.publications reversed %}
+  {% if post.category == 'Applied' %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
