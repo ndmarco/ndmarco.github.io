@@ -7,10 +7,7 @@ main:
     url: /notes/
 
   - title: "CV"
-    url: /cv/
-
-  - title: "Talks"
-    url: /talks/
+    url: /files/Nicholas_Marco_CV.pdf
 
   - title: "Podcasts"
     url: /podcasts/
