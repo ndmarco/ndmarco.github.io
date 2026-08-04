@@ -1,0 +1,31 @@
+/* ==========================================================================
+   THEME VARIABLES (light default; overridden in _dark-mode.scss)
+   ========================================================================== */
+
+:root {
+  --body-bg      : #{$background-color};
+  --text-color   : #{$text-color};
+  --text-muted   : #{$gray};
+  --heading-color: #{$darker-gray};
+  --link-color   : #{$link-color};
+  --link-hover   : #{$link-color-hover};
+  --border-color : #{$border-color};
+
+  --card-bg      : #fff;
+  --card-border  : #{$border-color};
+  --card-shadow  : #{$box-shadow};
+  --card-shadow-hover: #{$box-shadow-hover};
+
+  --masthead-bg  : rgba(255, 255, 255, 0.85);
+  --footer-bg    : #{$lighter-gray};
+  --footer-text  : #{mix(#fff, $gray, 25%)};
+
+  --code-bg      : #{$code-background-color};
+  --code-border  : #{$lighter-gray};
+  --code-text    : #{$text-color};
+
+  --panel-bg     : #fff;
+  --panel-border : #{$border-color};
+
+  --scrollbar-thumb: #{$light-gray};
+}

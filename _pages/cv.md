@@ -12,11 +12,15 @@ redirect_from:
 Education
 ======
 * B.S. in Mathematics, option in Statistics, CSULB, 2017
-* Ph.D in Biostatistics, UCLA (in progress)
+* Ph.D in Biostatistics, UCLA, 2023
 
 Academic Work Experience
 ======
-* 01/2019 - Present: Graduate Research Assistant
+* 2023 - Present: Postdoctoral Associate
+  * Department of Statistical Science, Duke University
+  * Supervisors: Surya Tokdar and Jennifer Groh
+
+* 01/2019 - 2023: Graduate Research Assistant
   * UCLA
 
 * 09/2018 - 06/2019: Teaching Assistant

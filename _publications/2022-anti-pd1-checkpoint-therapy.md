@@ -7,5 +7,6 @@ date: 2022-01-31
 venue: 'Journal for immunotherapy of cancer'
 paperurl: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8804679/'
 citation: 'Weidhaas, J., Marco, N., Scheffler, A. W., Kalbasi, A., Wilenius, K., Rietdorf, E., ... & Telesca, D. (2022). Germline biomarkers predict toxicity to anti-PD1/PDL1 checkpoint therapy. Journal for immunotherapy of cancer, 10(2).'
-category: Applied
+authors: 'J. Weidhaas, **N. Marco**, A.W. Scheffler, A. Kalbasi, K. Wilenius, E. Rietdorf, et al., D. Telesca'
+category: Applied & Clinical Collaborations
 ---

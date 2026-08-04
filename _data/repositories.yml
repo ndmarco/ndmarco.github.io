@@ -1,0 +1,4 @@
+github_repos:
+  - ndmarco/AdaptEllipticalSliceSampler.jl
+  - ndmarco/BayesFMMM
+  - ndmarco/NeuralComp

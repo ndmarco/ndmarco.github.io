@@ -7,5 +7,6 @@ date: 2022-01-03
 venue: 'Radiotherapy and Oncology'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0167814021090885?casa_token=ITx0Fzkt2RsAAAAA:Rmq1_4milTac9GsdrLEeLr7Mws9spXxPwgMkpG7Hi9lFY2d2KSxmz924SYKs_HniNoXkeFCvf2t_'
 citation: 'Kishan, A. U., Marco, N., Schulz-Jaavall, M. B., Steinberg, M. L., Tran, P. T., Juarez, J. E., ... & Weidhaas, J. B. (2022). Germline variants disrupting microRNAs predict long-term genitourinary toxicity after prostate cancer radiation. Radiotherapy and Oncology, 167, 226-232.'
-category: Applied
+authors: 'A.U. Kishan, **N. Marco**, M.B. Schulz-Jaavall, M.L. Steinberg, P.T. Tran, J.E. Juarez, et al., J.B. Weidhaas'
+category: Applied & Clinical Collaborations
 ---

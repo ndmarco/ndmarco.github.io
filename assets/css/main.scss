@@ -14,6 +14,7 @@
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
+@import "theme-vars";
 
 @import "reset";
 @import "base";
@@ -24,6 +25,7 @@
 @import "buttons";
 @import "notices";
 @import "masthead";
+@import "theme-toggle";
 @import "navigation";
 @import "footer";
 @import "syntax";
@@ -33,9 +35,13 @@
 @import "page";
 @import "archive";
 @import "sidebar";
+@import "repositories";
+@import "research";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+@import "dark-mode";

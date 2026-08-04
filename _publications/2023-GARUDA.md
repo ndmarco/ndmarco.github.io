@@ -7,5 +7,6 @@ date: 2023-06-01
 venue: 'Journal of Clinical Oncology'
 paperurl: 'https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.5089'
 citation: 'Weidhaas, J.B., Marco, N., Steinberg, M.L., Lee, A., Xiang, M., Valle, L.F., Casado, M., Stube, A., Telesca, D. and Kishan, A.U., 2023. Early findings from the GARUDA trial: The impact of a genetic signature of late radiation toxicity on prostate cancer treatment decision making.'
-category: Applied
+authors: 'J.B. Weidhaas, **N. Marco**, M.L. Steinberg, A. Lee, M. Xiang, L.F. Valle, M. Casado, A. Stube, D. Telesca, A.U. Kishan'
+category: Applied & Clinical Collaborations
 ---

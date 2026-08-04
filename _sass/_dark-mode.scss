@@ -1,0 +1,108 @@
+/* ==========================================================================
+   DARK MODE
+
+   Applies when the html element carries data-theme="dark" (set by
+   assets/js/theme-toggle.js, persisted in localStorage), and as a fallback
+   for users who haven't chosen explicitly, via prefers-color-scheme.
+   ========================================================================== */
+
+@mixin dark-theme-vars {
+  --body-bg      : #14161a;
+  --text-color   : #d4d7dd;
+  --text-muted   : #8b9099;
+  --heading-color: #f1f2f4;
+  --link-color   : #7cc4e0;
+  --link-hover   : #a3d6ea;
+  --border-color : #2b2e35;
+
+  --card-bg      : #1b1d23;
+  --card-border  : #2b2e35;
+  --card-shadow  : 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.35);
+  --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  --masthead-bg  : rgba(20, 22, 26, 0.85);
+  --footer-bg    : #101115;
+  --footer-text  : #8b9099;
+
+  --code-bg      : #1e2127;
+  --code-border  : #2b2e35;
+  --code-text    : #d4d7dd;
+
+  --panel-bg     : #1b1d23;
+  --panel-border : #2b2e35;
+
+  --scrollbar-thumb: #3a3d45;
+}
+
+@mixin dark-theme-components {
+  body {
+    background-color: var(--body-bg);
+  }
+
+  ::selection {
+    color: #000;
+    background: #a3d6ea;
+  }
+
+  img:not([src*=".svg"]) {
+    opacity: 0.92;
+  }
+
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--card-border);
+  }
+
+  table {
+    border-color: var(--border-color);
+  }
+
+  thead {
+    background-color: var(--panel-bg);
+    border-bottom-color: var(--border-color);
+  }
+
+  th, td {
+    border-color: var(--border-color);
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: var(--panel-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }
+
+  /* GitHub's brand color (#171516) is near-black and invisible on a dark
+     background; swap it for the theme's light text color */
+  .social-icons .fa-github,
+  .social-icons .fa-github-alt,
+  .social-icons .fa-github-square,
+  .page__footer .fa-github {
+    color: var(--text-color);
+  }
+
+  /* .social-icons .fa is hardcoded to #000 (location/employer pin icons);
+     invisible on a dark background */
+  .social-icons .fa {
+    color: var(--text-color);
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-theme-vars;
+  @include dark-theme-components;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme-vars;
+    @include dark-theme-components;
+  }
+}

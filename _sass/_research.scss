@@ -1,0 +1,167 @@
+/* ==========================================================================
+   RESEARCH PAGE (homepage)
+   ========================================================================== */
+
+.research-page {
+  --research-accent: #3d5a99;
+  --research-accent2: #c0392b;
+}
+
+p.research-subtitle {
+  font-size: 0.95rem;
+  color: var(--heading-color, #{$darker-gray});
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0 0 2rem;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--link-color, #{$link-color});
+    }
+  }
+}
+
+.research-overview {
+  font-family: $global-font-family;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--heading-color, #{$darker-gray});
+  border-left: 3px solid var(--research-accent);
+  padding-left: 1.5rem;
+  margin: 0 0 2.5rem;
+}
+
+.research-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.research-card {
+  position: relative;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--card-border, #{$border-color});
+  border-radius: $border-radius-sm;
+  box-shadow: var(--card-shadow, #{$box-shadow});
+  padding: 1.75rem 2rem;
+  transition: $global-transition;
+
+  &:hover {
+    box-shadow: var(--card-shadow-hover, #{$box-shadow-hover});
+    transform: translateY(-2px);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: $border-radius-sm 0 0 $border-radius-sm;
+    background: var(--research-accent);
+  }
+
+  &--neurosci::before { background: #2980b9; }
+  &--asd::before      { background: #27ae60; }
+  &--sampler::before  { background: var(--research-accent); }
+  &--future::before   { background: #8e44ad; }
+
+  &__eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted, #{$gray});
+    margin-bottom: 0.6rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--link-color, #{$link-color});
+    }
+  }
+
+  &__title {
+    font-family: $header-font-family;
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--heading-color, #{$darker-gray});
+    margin: 0 0 0.9rem;
+  }
+
+  &__body {
+    font-size: 0.95rem;
+    color: var(--text-color, #{$text-color});
+    line-height: 1.75;
+
+    p + p {
+      margin-top: 0.75rem;
+    }
+  }
+
+  &__links {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+
+    a {
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.2rem;
+  }
+}
+
+.research-tag {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--research-accent);
+  background: rgba(61, 90, 153, 0.1);
+  border-radius: 2px;
+  padding: 0.2rem 0.55rem;
+  text-decoration: none;
+  transition: $global-transition;
+
+  &:hover {
+    background: rgba(61, 90, 153, 0.2);
+    text-decoration: none;
+  }
+
+  &--red {
+    color: var(--research-accent2);
+    background: rgba(192, 57, 43, 0.1);
+
+    &:hover { background: rgba(192, 57, 43, 0.2); }
+  }
+
+  &--green {
+    color: #1e7e50;
+    background: rgba(30, 126, 80, 0.12);
+
+    &:hover { background: rgba(30, 126, 80, 0.22); }
+  }
+
+  &--purple {
+    color: #6c3483;
+    background: rgba(108, 52, 131, 0.1);
+
+    &:hover { background: rgba(108, 52, 131, 0.2); }
+  }
+}
+
+@media (max-width: 540px) {
+  .research-card {
+    padding: 1.25rem 1.4rem;
+  }
+}

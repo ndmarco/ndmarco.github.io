@@ -1,0 +1,64 @@
+/* ==========================================================================
+   THEME TOGGLE
+   ========================================================================== */
+
+.theme-toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25em;
+  height: 2.25em;
+  margin-left: 1em;
+  padding: 0;
+  color: var(--text-muted, #{$gray});
+  background-color: transparent;
+  border: 1px solid var(--border-color, #{$border-color});
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    color: var(--text-color, #{$text-color});
+    border-color: var(--text-muted, #{$gray});
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    @extend %tab-focus;
+  }
+
+  /* compound selectors (.fas.theme-toggle__icon) so specificity beats
+     Font Awesome's own `.fas { display: inline-block }` core rule,
+     which is imported later in the cascade */
+  .theme-toggle__icon {
+    display: none;
+    font-size: 0.9em;
+  }
+
+  .theme-toggle__icon--moon {
+    display: inline-block;
+  }
+}
+
+:root[data-theme="dark"] {
+  .theme-toggle .theme-toggle__icon--moon {
+    display: none;
+  }
+
+  .theme-toggle .theme-toggle__icon--sun {
+    display: inline-block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    .theme-toggle .theme-toggle__icon--moon {
+      display: none;
+    }
+
+    .theme-toggle .theme-toggle__icon--sun {
+      display: inline-block;
+    }
+  }
+}

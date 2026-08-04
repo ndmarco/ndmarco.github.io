@@ -7,5 +7,6 @@ date: 2023-03-01
 venue: 'Clinical and Translational Radiation Oncology'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2405630823000198'
 citation: 'Kishan, A.U., Marco, N., Ma, T.M., Steinberg, M.L., Sachdeva, A., Cao, M., Ballas, L.K., Rietdorf, E., Telesca, D. and Weidhaas, J.B., 2023. Application of a genetic signature of late GU toxicity in SCIMITAR, a Post-op SBRT trial. Clinical and Translational Radiation Oncology, 39, p.100594.'
-category: Applied
+authors: 'A.U. Kishan, **N. Marco**, T.M. Ma, M.L. Steinberg, A. Sachdeva, M. Cao, L.K. Ballas, E. Rietdorf, D. Telesca, J.B. Weidhaas'
+category: Applied & Clinical Collaborations
 ---

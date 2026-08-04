@@ -15,6 +15,7 @@ url                      : https://ndmarco.github.io # the base hostname & proto
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ndmarco.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+google_fonts             : "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -115,8 +116,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  applepodcast     : "https://podcasts.apple.com/us/podcast/two-nearest-neighbors/id1600839339"
-  spotify          : "https://open.spotify.com/show/3EoHTgSLU5l1qZfZB3nwwK?si=JUVHsd83TeKAtt3qyyEA5w"
+  applepodcast     :
+  spotify          :
 
 
 # Reading Files
