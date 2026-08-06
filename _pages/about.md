@@ -83,7 +83,7 @@ This motivates the central question of my work: Can we incorporate this scientif
       <p>
         In case studies spanning deep Gaussian process surrogate modeling, Bayesian neural networks,
         and high-dimensional sparse regression with horseshoe priors, AGESS proved to be a reliable and efficient <em>black-box sampler</em>.
-        The sampler is implemented as an open-source Julia package with a full tutorials included in the documentation.
+        The sampler is implemented as an open-source Julia package with full tutorials included in the documentation.
       </p>
     </div>
     <div class="research-card__links">
