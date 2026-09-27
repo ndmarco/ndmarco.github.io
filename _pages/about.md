@@ -35,7 +35,7 @@ This motivates the central question of my work: Can we incorporate this scientif
 <div class="research-cards">
 
   <div class="research-card research-card--neurosci">
-    <a class="research-card__eyebrow" href="/publications/#neural-encoding--neural-imaging">Point Process Models &nbsp;·&nbsp; Neural Encoding</a>
+    <a class="research-card__eyebrow" href="/publications/">Point Process Models &nbsp;·&nbsp; Neural Encoding</a>
     <h2 class="research-card__title">How Individual Neurons Encode Multiple Stimuli: A Multiplexing Framework</h2>
     <div class="research-card__body">
       <p>
@@ -69,7 +69,7 @@ This motivates the central question of my work: Can we incorporate this scientif
   </div>
 
   <div class="research-card research-card--sampler">
-    <a class="research-card__eyebrow" href="/publications/#bayesian-computation">Bayesian Computation &nbsp;·&nbsp; Methodology</a>
+    <a class="research-card__eyebrow" href="/publications/">Bayesian Computation &nbsp;·&nbsp; Methodology</a>
     <h2 class="research-card__title">Adaptive Generalized Elliptical Slice Sampling</h2>
     <div class="research-card__body">
       <p>
@@ -101,7 +101,7 @@ This motivates the central question of my work: Can we incorporate this scientif
   </div>
 
   <div class="research-card research-card--asd">
-    <a class="research-card__eyebrow" href="/publications/#neural-encoding--neural-imaging">Functional Data Analysis &nbsp;·&nbsp; Neurodevelopment</a>
+    <a class="research-card__eyebrow" href="/publications/">Functional Data Analysis &nbsp;·&nbsp; Neurodevelopment</a>
     <h2 class="research-card__title">Characterizing Brain Activity in Children with Autism Spectrum Disorder</h2>
     <div class="research-card__body">
       <p>

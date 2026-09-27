@@ -1,0 +1,43 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if author.googlescholar %}
+  <p>You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u></p>
+{% endif %}
+
+{% include base_path %}
+
+{% comment %}
+  Short citation: authors up to and including the bolded author (at least three),
+  then "et al." if more follow. Author names are stored as "J.M. Leeman" and
+  rendered as "Leeman, J.M.".
+{% endcomment %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in pubs %}
+  {% assign names = post.authors | split: ", " %}
+  {% assign shown = 3 %}
+  {% for n in names %}
+    {% if n contains "**" and forloop.index > shown %}{% assign shown = forloop.index %}{% endif %}
+  {% endfor %}
+  {% assign truncated = false %}
+  {% if names.size > shown %}{% assign truncated = true %}{% endif %}
+  {% capture author_str %}{% for n in names limit: shown %}{% if n == "et al." %}{% assign truncated = true %}{% continue %}{% endif %}{% assign clean = n | remove: "**" | strip %}{% assign initials = clean | split: " " | first %}{% assign surname = clean | remove_first: initials | strip %}{% unless forloop.first %}, {% endunless %}{% if n contains "**" %}<strong>{{ surname }}, {{ initials }}</strong>{% else %}{{ surname }}, {{ initials }}{% endif %}{% endfor %}{% if truncated %}, et al.{% endif %}{% endcapture %}
+  {% assign title = post.title %}
+  {% assign title_end = title | slice: -1 %}
+  {% if title_end == "." %}{% assign title_len = title.size | minus: 1 %}{% assign title = title | slice: 0, title_len %}{% endif %}
+  <li class="pub-list__item">
+    <a class="pub-list__title" href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+    <span class="pub-list__meta">
+      {% assign author_str = author_str | strip %}{% assign author_end = author_str | strip_html | slice: -1 %}{{ author_str }}{% unless author_end == "." %}.{% endunless %}
+      {% if post.venue %}<em class="pub-list__venue">{{ post.venue }}</em>,{% endif %}
+      {{ post.date | date: "%Y" }}.
+    </span>
+  </li>
+{% endfor %}
+</ol>
+

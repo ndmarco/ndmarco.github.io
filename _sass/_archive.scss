@@ -70,6 +70,40 @@
   }
 }
 
+/*
+   Publication list (numbered short citations on the publications page)
+   ========================================================================== */
+
+.pub-list {
+  margin: 1.5em 0 0;
+  padding-left: 2em;
+  font-size: $type-size-6;
+  line-height: 1.6;
+
+  &__item {
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+
+    &::marker {
+      color: var(--text-muted, #{$gray});
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: 500;
+  }
+
+  &__meta {
+    display: block;
+    font-size: 0.9em;
+  }
+
+  &__venue {
+    color: var(--text-muted, #{$gray});
+  }
+}
+
 .archive__item-title {
   margin-top: 0;
   margin-bottom: 0.25em;

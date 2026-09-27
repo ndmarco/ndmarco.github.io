@@ -77,6 +77,18 @@
     margin-right: 0.3em;
   }
 
+  &__link {
+    text-decoration: none;
+
+    i {
+      margin-right: 0.3em;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__updated {
     margin-left: auto;
   }

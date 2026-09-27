@@ -178,9 +178,6 @@ kramdown:
 
 # Collections
 collections:
-  notes:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -216,15 +213,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _notes
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""

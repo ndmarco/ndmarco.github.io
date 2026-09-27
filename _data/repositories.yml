@@ -2,3 +2,7 @@ github_repos:
   - ndmarco/AdaptEllipticalSliceSampler.jl
   - ndmarco/BayesFMMM
   - ndmarco/NeuralComp
+
+# Documentation links shown on the repository card, keyed by repo.
+docs:
+  ndmarco/AdaptEllipticalSliceSampler.jl: https://ndmarco.github.io/AdaptEllipticalSliceSampler.jl/stable/

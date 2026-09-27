@@ -32,11 +32,20 @@
         escapeHtml(lang) +
         '</span>'
       : '';
+    // When a repo has documentation, the title links to the docs and a
+    // secondary link in the meta row points to GitHub.
+    var docsUrl = (window.__repoDocs || {})[repo.full_name];
+    var titleUrl = docsUrl ? escapeHtml(docsUrl) : repo.html_url;
+    var githubHtml = docsUrl
+      ? '<a class="repo-card__link" href="' +
+        repo.html_url +
+        '" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>'
+      : '';
 
     return (
       '<article class="repo-card">' +
       '<h2 class="repo-card__title"><a href="' +
-      repo.html_url +
+      titleUrl +
       '" target="_blank" rel="noopener">' +
       escapeHtml(repo.name) +
       '</a></h2>' +
@@ -49,6 +58,7 @@
       '<span class="repo-card__stat"><i class="fas fa-code-branch" aria-hidden="true"></i> ' +
       repo.forks_count +
       '</span>' +
+      githubHtml +
       '<span class="repo-card__updated">Updated ' +
       fmtDate(repo.pushed_at) +
       '</span>' +

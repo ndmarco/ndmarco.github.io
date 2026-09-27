@@ -6,8 +6,5 @@ main:
   - title: "Repositories"
     url: /repositories/
 
-  - title: "Notes"
-    url: /notes/
-
   - title: "CV"
     url: /files/Nicholas_Marco_CV.pdf
